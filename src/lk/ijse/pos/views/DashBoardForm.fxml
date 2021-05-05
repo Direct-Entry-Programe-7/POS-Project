@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contextOfDashBoard" prefHeight="255.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.DashBoardFormController">
+   <children>
+      <Label alignment="CENTER" layoutY="4.0" prefHeight="61.0" prefWidth="600.0" text="POS SYSTEM" textFill="#43da1b">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Separator layoutX="4.0" layoutY="64.0" prefHeight="4.0" prefWidth="591.0" />
+      <Label layoutX="4.0" layoutY="233.0" text="Developed by DEP7" textFill="#eb0c0c"/>
+      <Label layoutX="504.0" layoutY="233.0" text="Version 1.000" textFill="#eb0c0c"/>
+      <ImageView fx:id="btnCustomer" fitHeight="106.0" fitWidth="115.0" layoutX="34.0" layoutY="79.0" onMouseClicked="#CustomerForm" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/user.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="106.0" fitWidth="106.0" layoutX="179.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/notepad.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="99.0" fitWidth="106.0" layoutX="334.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/shopping-bag.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="106.0" fitWidth="106.0" layoutX="466.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/shopping-cart.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
